@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.org/dtd/hibernate-reverse-engineering-3.0.dtd" >
+
+<hibernate-reverse-engineering>
+<!-- 	<table-filter match-catalog="instituto" match-schema="dbo" -->
+<!-- 		match-name="cicloformativo" /> -->
+
+
+<!-- 	<table-filter match-catalog="instituto" match-schema="dbo" -->
+<!-- 		match-name="comunidadAutonoma" /> -->
+<!-- 	<table-filter match-catalog="instituto" match-schema="dbo" -->
+<!-- 		match-name="direccion" /> -->
+<!-- 	<table-filter match-catalog="instituto" match-schema="dbo" -->
+<!-- 		match-name="modulo" /> -->
+
+<!-- 	<table-filter match-catalog="instituto" match-schema="dbo" -->
+<!-- 		match-name="profesormodulo" /> -->
+<!-- 	<table-filter match-catalog="instituto" match-schema="dbo" -->
+<!-- 		match-name="provincia" /> -->
+<!-- 	<table-filter match-catalog="instituto" match-schema="dbo" -->
+<!-- 		match-name="tiposbasicos" /> -->
+
+
+	<table-filter match-catalog="instituto" match-schema="dbo"
+		match-name="contactInfo" />
+		
+		 	<table-filter match-catalog="instituto" match-schema="dbo" 
+		match-name="profesor" /> 
+</hibernate-reverse-engineering>

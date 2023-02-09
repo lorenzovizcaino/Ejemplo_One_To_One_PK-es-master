@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 31 ene 2023 11:04:06 by Hibernate Tools 5.6.14.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="instituto" name="modelo.Direccion" optimistic-lock="none" table="direccion">
+        <id name="id" type="java.lang.Integer">
+            <column name="id"/>
+            <generator class="identity"/>
+        </id>
+        <many-to-one class="modelo.Provincia" fetch="select" name="provincia">
+            <column name="idProvincia" not-null="true"/>
+        </many-to-one>
+        <property name="calle" type="string">
+            <column name="calle"/>
+        </property>
+        <property name="numero" type="java.lang.Integer">
+            <column name="numero"/>
+        </property>
+        <property name="poblacion" type="string">
+            <column name="poblacion"/>
+        </property>
+    </class>
+</hibernate-mapping>

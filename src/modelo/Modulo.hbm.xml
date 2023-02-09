@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 31 ene 2023 11:04:06 by Hibernate Tools 5.6.14.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="instituto" name="modelo.Modulo" optimistic-lock="none" table="modulo">
+        <id name="idModulo" type="java.lang.Integer">
+            <column name="idModulo"/>
+            <generator class="identity"/>
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" not-null="true"/>
+        </property>
+        <set fetch="select" inverse="true" lazy="true" name="profesors" table="profesormodulo">
+            <key>
+                <column name="idModulo" not-null="true"/>
+            </key>
+            <many-to-many entity-name="modelo.Profesor">
+                <column name="idProfesor" not-null="true"/>
+            </many-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

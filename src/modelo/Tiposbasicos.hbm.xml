@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 31 ene 2023 11:04:06 by Hibernate Tools 5.6.14.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="instituto" name="modelo.Tiposbasicos" optimistic-lock="none" table="tiposbasicos">
+        <id name="inte" type="int">
+            <column name="inte"/>
+            <generator class="assigned"/>
+        </id>
+        <property name="bigint1" type="java.lang.Long">
+            <column name="bigint1"/>
+        </property>
+        <property name="smallint1" type="java.lang.Short">
+            <column name="smallint1"/>
+        </property>
+        <property name="float1" type="java.lang.Double">
+            <column name="float1" precision="53" scale="0"/>
+        </property>
+        <property name="character1" type="java.lang.Character">
+            <column length="1" name="character1"/>
+        </property>
+        <property name="byte1" type="java.lang.Byte">
+            <column name="byte1"/>
+        </property>
+        <property name="bit1" type="java.lang.Boolean">
+            <column name="bit1"/>
+        </property>
+        <property name="stri" type="string">
+            <column name="stri"/>
+        </property>
+        <property name="dateDate" type="date">
+            <column length="10" name="dateDate"/>
+        </property>
+        <property name="timeTime" type="time">
+            <column length="8" name="timeTime"/>
+        </property>
+        <property name="dateTime2" type="timestamp">
+            <column length="19" name="dateTime2"/>
+        </property>
+        <property name="texto" type="string">
+            <column name="texto"/>
+        </property>
+        <property name="binario" type="binary">
+            <column name="binario"/>
+        </property>
+        <property name="bigDecimal" type="big_decimal">
+            <column name="bigDecimal"/>
+        </property>
+    </class>
+</hibernate-mapping>
